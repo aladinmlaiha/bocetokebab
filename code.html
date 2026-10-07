@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kebab Al Sultán | Sabor de Estambul en el corazón de Madrid</title>
+<meta content="Auténtico kebab y cocina turca casera con carne 100% halal en el centro de Madrid. Disfruta de döner tradicional, iskender, falafel, baklava y terraza cerca de Sol." name="description"/>
+<meta content="kebab madrid, kebab al sultan, comida turca madrid, restaurante halal sol, döner kebab sol, cocina turca" name="keywords"/>
+<!-- Open Graph / Meta Social -->
+<meta content="restaurant" property="og:type"/>
+<meta content="Kebab Al Sultán | Sabor de Estambul en Madrid" property="og:title"/>
+<meta content="Kebab y cocina turca casera, carne halal certificada, terraza y servicio a domicilio cerca de Puerta del Sol." property="og:description"/>
+<meta content="https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+<meta content="es_ES" property="og:locale"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome Icons for UI -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Schema.org JSON-LD para SEO Restaurante -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Kebab Al Sultán",
+    "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+34910123456",
+    "email": "reservas@kebabalsultan.es",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle de la Aduana, 14",
+      "addressLocality": "Madrid",
+      "postalCode": "28013",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.4182,
+      "longitude": -3.7015
+    },
+    "servesCuisine": ["Turkish", "Middle Eastern", "Halal"],
+    "priceRange": "€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "12:00",
+        "closes": "00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "02:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "13:00",
+        "closes": "23:30"
+      }
+    ],
+    "hasMenu": "#carta"
+  }
+  </script>
+<style>/* VARIABLES DE MARCA Y PALETA SOLICITADA */
+:root {
+    --color-granate: #8B1E2D;
+    --color-granate-dark: #6E1421;
+    --color-naranja: #E8832A;
+    --color-naranja-hover: #D27220;
+    --color-crema: #FFF6E9;
+    --color-crema-dark: #F7E7D0;
+    --color-marron: #2B1A12;
+    --color-marron-light: #523727;
+    --color-blanco: #FFF;
+    --color-verde-veg: #2E7D32;
+    --color-rojo-spicy: #D32F2F;
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 2px 8px rgba(43, 26, 18, 0.08);
+    --shadow-md: 0 8px 24px rgba(43, 26, 18, 0.12);
+    --shadow-lg: 0 16px 36px rgba(43, 26, 18, 0.18);
+    --shadow-header: 0 4px 20px rgba(43, 26, 18, 0.15);
+    --transition-base: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
+    }
+/* RESET & BASE */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+    }
+body {
+    font-family: var(--font-sans);
+    color: var(--color-marron);
+    background-color: var(--color-crema);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased
+    }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+    }
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base)
+    }
+button, input, select, textarea {
+    font-family: inherit
+    }
+/* CONTENEDORES Y UTILIDADES */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px
+    }
+.section-padding {
+    padding: 90px 0
+    }
+.text-center {
+    text-align: center
+    }
+/* CABECERAS DE SECCIÓN CON DETALLE TURCO */
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(232, 131, 42, 0.15);
+    color: var(--color-granate);
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    margin-bottom: 12px;
+    border: 1px solid rgba(232, 131, 42, 0.3)
+    }
+.section-title {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--color-granate);
+    margin-bottom: 16px;
+    line-height: 1.2
+    }
+.section-subtitle {
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+    font-size: 1.05rem;
+    color: var(--color-marron-light);
+    font-weight: 400
+    }
+.turkish-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px auto 20px auto;
+    color: var(--color-naranja)
+    }
+.turkish-divider span {
+    width: 45px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--color-naranja))
+    }
+.turkish-divider span.right {
+    background: linear-gradient(to left, transparent, var(--color-naranja))
+    }
+/* BOTONES */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition-base);
+    text-align: center;
+    text-decoration: none
+    }
+.btn-primary {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    box-shadow: 0 4px 15px rgba(232, 131, 42, 0.35)
+    }
+.btn-primary:hover {
+    background-color: var(--color-naranja-hover);
+    transform: translatey(-2px);
+    box-shadow: 0 6px 20px rgba(232, 131, 42, 0.45)
+    }
+.btn-granate {
+    background-color: var(--color-granate);
+    color: var(--color-blanco);
+    box-shadow: 0 4px 15px rgba(139, 30, 45, 0.35)
+    }
+.btn-granate:hover {
+    background-color: var(--color-granate-dark);
+    transform: translatey(-2px);
+    box-shadow: 0 6px 20px rgba(139, 30, 45, 0.45)
+    }
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border: 2px solid var(--color-blanco);
+    backdrop-filter: blur(4px)
+    }
+.btn-outline:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-granate);
+    transform: translatey(-2px)
+    }
+/* HEADER & NAVEGACIÓN FIJA */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 246, 233, 0.94);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-base);
+    border-bottom: 1px solid rgba(139, 30, 45, 0.1)
+    }
+.header.scrolled {
+    background-color: var(--color-crema);
+    box-shadow: var(--shadow-header)
+    }
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px
+    }
+/* LOGO ESTILIZADO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none
+    }
+.logo-symbol {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--color-granate), var(--color-naranja));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-crema);
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(139, 30, 45, 0.3);
+    border: 2px solid var(--color-crema-dark)
+    }
+.logo-text-group {
+    display: flex;
+    flex-direction: column
+    }
+.logo-title {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--color-granate);
+    line-height: 1.1;
+    letter-spacing: 0.5px
+    }
+.logo-subtitle {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-naranja);
+    font-weight: 600
+    }
+/* MENÚ DE ESCRITORIO */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none
+    }
+.nav-link {
+    font-weight: 500;
+    font-size: 0.98rem;
+    color: var(--color-marron);
+    position: relative;
+    padding: 6px 0
+    }
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-naranja);
+    transition: width 0.3s ease;
+    border-radius: 2px
+    }
+.nav-link:hover {
+    color: var(--color-granate)
+    }
+.nav-link:hover::after {
+    width: 100%
+    }
+/* BOTÓN HAMBURGUESA MÓVIL */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--color-granate);
+    cursor: pointer;
+    padding: 6px
+    }
+/* SECCIÓN HERO */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(43, 26, 18, 0.72), rgba(139, 30, 45, 0.78)), url(https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-blanco);
+    padding: 120px 24px 80px 24px;
+    text-align: center
+    }
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 30%, rgba(43, 26, 18, 0.6) 100%);
+    pointer-events: none
+    }
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 860px
+    }
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(232, 131, 42, 0.25);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(232, 131, 42, 0.5);
+    color: var(--color-crema);
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 24px
+    }
+.hero-title {
+    font-family: var(--font-display);
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4)
+    }
+.hero-title span {
+    color: var(--color-naranja)
+    }
+.hero-slogan {
+    font-size: 1.45rem;
+    font-weight: 300;
+    color: var(--color-crema);
+    margin-bottom: 38px;
+    font-style: italic;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+    }
+.hero-cta-group {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px
+    }
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255, 246, 233, 0.2);
+    padding-top: 25px
+    }
+.hero-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--color-crema-dark)
+    }
+.hero-badge-item i {
+    color: var(--color-naranja);
+    font-size: 1.1rem
+    }
+/* FILTROS DE CARTA */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px
+    }
+.tab-btn {
+    padding: 10px 22px;
+    background-color: var(--color-blanco);
+    color: var(--color-marron);
+    border: 1.5px solid rgba(139, 30, 45, 0.15);
+    border-radius: var(--radius-full);
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transition-base)
+    }
+.tab-btn:hover {
+    background-color: var(--color-crema-dark);
+    color: var(--color-granate)
+    }
+.tab-btn.active {
+    background-color: var(--color-granate);
+    color: var(--color-blanco);
+    border-color: var(--color-granate);
+    box-shadow: 0 4px 14px rgba(139, 30, 45, 0.25)
+    }
+/* GRID DE PLATOS */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px
+    }
+.menu-card {
+    background: var(--color-blanco);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(139, 30, 45, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-base);
+    position: relative
+    }
+.menu-card:hover {
+    transform: translatey(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(232, 131, 42, 0.3)
+    }
+.card-img-wrapper {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    background-color: var(--color-crema-dark)
+    }
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease
+    }
+.menu-card:hover .card-img {
+    transform: scale(1.06)
+    }
+.card-badges {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 6px;
+    z-index: 2
+    }
+.badge-tag {
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    backdrop-filter: blur(6px)
+    }
+.badge-veg {
+    background-color: rgba(235, 247, 238, 0.95);
+    color: var(--color-verde-veg);
+    border: 1px solid rgba(46, 125, 50, 0.3)
+    }
+.badge-spicy {
+    background-color: rgba(254, 239, 239, 0.95);
+    color: var(--color-rojo-spicy);
+    border: 1px solid rgba(211, 47, 47, 0.3)
+    }
+.badge-halal {
+    background-color: rgba(255, 246, 233, 0.95);
+    color: var(--color-granate);
+    border: 1px solid rgba(139, 30, 45, 0.3)
+    }
+.card-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+    }
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px
+    }
+.card-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-granate)
+    }
+.card-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-naranja);
+    white-space: nowrap
+    }
+.card-desc {
+    color: var(--color-marron-light);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    flex-grow: 1
+    }
+.card-footer {
+    border-top: 1px dashed rgba(139, 30, 45, 0.12);
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--color-marron-light)
+    }
+/* SECCIÓN RESERVAS */
+.reservas-section {
+    background: linear-gradient(135deg, #FFF9F0 0%, #F5E5D0 100%);
+    position: relative
+    }
+.reservas-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--color-blanco);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(139, 30, 45, 0.12)
+    }
+.reserva-alert {
+    background-color: rgba(232, 131, 42, 0.1);
+    border-left: 4px solid var(--color-naranja);
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: var(--color-marron);
+    display: flex;
+    align-items: center;
+    gap: 12px
+    }
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+    }
+.form-group-full {
+    grid-column: span 2
+    }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+    }
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-marron)
+    }
+.form-label .required {
+    color: var(--color-granate)
+    }
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid rgba(43, 26, 18, 0.15);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--color-marron);
+    background-color: var(--color-blanco);
+    transition: var(--transition-base)
+    }
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-naranja);
+    box-shadow: 0 0 0 3px rgba(232, 131, 42, 0.2)
+    }
+.form-control.error {
+    border-color: var(--color-rojo-spicy);
+    background-color: #FFF8F8
+    }
+.error-msg {
+    font-size: 0.8rem;
+    color: var(--color-rojo-spicy);
+    display: none
+    }
+.form-control.error + .error-msg {
+    display: block
+    }
+/* MENSAJE DE CONFIRMACIÓN MODAL/BANNER */
+.confirmation-banner {
+    display: none;
+    background: linear-gradient(135deg, var(--color-granate), var(--color-granate-dark));
+    color: var(--color-blanco);
+    padding: 30px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    margin-top: 25px;
+    animation: fadeIn 0.4s ease
+    }
+.confirmation-banner i {
+    font-size: 3rem;
+    color: var(--color-naranja);
+    margin-bottom: 15px
+    }
+.confirmation-banner h4 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    margin-bottom: 8px
+    }
+/* SECCIÓN UBICACIÓN & CONTACTO */
+.ubicacion-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: stretch
+    }
+.map-container {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 2px solid rgba(139, 30, 45, 0.1);
+    min-height: 420px;
+    height: 100%
+    }
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0
+    }
+.info-card {
+    background: var(--color-blanco);
+    border-radius: var(--radius-md);
+    padding: 36px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(139, 30, 45, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    }
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px
+    }
+.info-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(232, 131, 42, 0.15);
+    color: var(--color-granate);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0
+    }
+.info-content h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-granate);
+    margin-bottom: 4px
+    }
+.info-content p, .info-content a {
+    color: var(--color-marron-light);
+    font-size: 0.95rem;
+    line-height: 1.5
+    }
+.info-content a:hover {
+    color: var(--color-naranja)
+    }
+.horarios-list {
+    list-style: none;
+    font-size: 0.92rem
+    }
+.horarios-list li {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px
+    }
+.horarios-list li span.day {
+    font-weight: 600;
+    color: var(--color-marron)
+    }
+/* SECCIÓN FAQ (ACORDEÓN) */
+.faq-container {
+    max-width: 820px;
+    margin: 0 auto
+    }
+.faq-item {
+    background: var(--color-blanco);
+    border-radius: var(--radius-sm);
+    margin-bottom: 14px;
+    border: 1px solid rgba(139, 30, 45, 0.1);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: var(--transition-base)
+    }
+.faq-item.active {
+    border-color: var(--color-naranja)
+    }
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-marron);
+    cursor: pointer;
+    transition: color 0.2s ease
+    }
+.faq-question:hover {
+    color: var(--color-granate)
+    }
+.faq-item.active .faq-question {
+    color: var(--color-granate)
+    }
+.faq-icon {
+    font-size: 1rem;
+    color: var(--color-naranja);
+    transition: transform 0.3s ease
+    }
+.faq-item.active .faq-icon {
+    transform: rotate(180deg)
+    }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease-out, padding 0.35s ease;
+    padding: 0 24px;
+    background-color: #FFFDF9;
+    color: var(--color-marron-light);
+    font-size: 0.95rem;
+    line-height: 1.6
+    }
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 24px 20px 24px
+    }
+/* FOOTER */
+.footer {
+    background-color: var(--color-marron);
+    color: var(--color-crema);
+    padding: 70px 0 25px 0;
+    position: relative;
+    border-top: 4px solid var(--color-naranja)
+    }
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px
+    }
+.footer-col h4 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--color-naranja);
+    margin-bottom: 20px;
+    position: relative
+    }
+.footer-desc {
+    font-size: 0.92rem;
+    color: #D3C4B8;
+    margin-bottom: 20px;
+    line-height: 1.6
+    }
+.social-links {
+    display: flex;
+    gap: 12px
+    }
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--color-crema);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: var(--transition-base);
+    border: 1px solid rgba(255, 255, 255, 0.15)
+    }
+.social-btn:hover {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    transform: translatey(-3px)
+    }
+.footer-links-list {
+    list-style: none
+    }
+.footer-links-list li {
+    margin-bottom: 10px
+    }
+.footer-links-list a {
+    color: #D3C4B8;
+    font-size: 0.92rem
+    }
+.footer-links-list a:hover {
+    color: var(--color-naranja);
+    padding-left: 4px
+    }
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #A89587
+    }
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        } to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 3.2rem
+        }
+    .ubicacion-grid {
+        grid-template-columns: 1fr
+        }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px
+        }
+    .map-container {
+        min-height: 350px
+        }
+    }
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block
+        }
+    .nav-links {
+        position: fixed;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-crema);
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translatey(-150%);
+        transition: transform 0.4s ease;
+        border-bottom: 2px solid var(--color-naranja)
+        }
+    .nav-links.open {
+        transform: translatey(0)
+        }
+    .header-btn {
+        display: none
+        }
+    .hero-title {
+        font-size: 2.5rem
+        }
+    .hero-slogan {
+        font-size: 1.15rem
+        }
+    .section-title {
+        font-size: 2.1rem
+        }
+    .form-grid {
+        grid-template-columns: 1fr
+        }
+    .form-group-full {
+        grid-column: span 1
+        }
+    .reservas-wrapper {
+        padding: 26px 18px
+        }
+    .footer-grid {
+        grid-template-columns: 1fr
+        }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center
+        }
+    }</style>
+</head>
+<body>
+<!-- CABECERA FIJA CON NAVEGACIÓN -->
+<header class="header" id="header">
+<div class="container header-content">
+<a aria-label="Inicio Kebab Al Sultán" class="logo" href="#inicio">
+<div class="logo-symbol">
+<i class="fa-solid fa-moon"></i>
+</div>
+<div class="logo-text-group">
+<span class="logo-title">Al Sultán</span>
+<span class="logo-subtitle">Cocina Turca · Madrid</span>
+</div>
+</a>
+<nav aria-label="Menú principal">
+<ul class="nav-links" id="navLinks">
+<li><a class="nav-link" href="#inicio">Inicio</a></li>
+<li><a class="nav-link" href="#carta">Carta</a></li>
+<li><a class="nav-link" href="#reservas">Reservas</a></li>
+<li><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+<li><a class="nav-link" href="#faq">FAQ</a></li>
+<li class="mobile-only-btn" style="display: none;">
+<a class="btn btn-primary" href="#reservas" style="padding: 10px 20px; font-size: 0.9rem;">Reservar mesa</a>
+</li>
+</ul>
+</nav>
+<div style="display: flex; align-items: center; gap: 14px;">
+<a class="btn btn-granate header-btn" href="#reservas">
+<i class="fa-regular fa-calendar-check"></i> Reservar mesa
+        </a>
+<button aria-expanded="false" aria-label="Abrir menú de navegación" class="menu-toggle" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- SECCIÓN HERO -->
+<section class="hero" id="inicio">
+<div class="hero-container">
+<div class="hero-tag">
+<i class="fa-solid fa-certificate"></i> Carne 100% Halal Certificada · Recetas Tradicionales
+        </div>
+<h1 class="hero-title">Kebab <span>Al Sultán</span></h1>
+<p class="hero-slogan">"Sabor de Estambul en el corazón de Madrid"</p>
+<div class="hero-cta-group">
+<a class="btn btn-primary" href="#carta">
+<i class="fa-solid fa-utensils"></i> Ver carta
+          </a>
+<a class="btn btn-outline" href="#reservas">
+<i class="fa-regular fa-calendar-days"></i> Reservar mesa
+          </a>
+</div>
+<div class="hero-badges">
+<div class="hero-badge-item">
+<i class="fa-solid fa-shop"></i> En el local &amp; Terraza
+          </div>
+<div class="hero-badge-item">
+<i class="fa-solid fa-bag-shopping"></i> Para llevar
+          </div>
+<div class="hero-badge-item">
+<i class="fa-solid fa-motorcycle"></i> A domicilio
+          </div>
+<div class="hero-badge-item">
+<i class="fa-solid fa-location-dot"></i> Calle de la Aduana, 14 (Sol)
+          </div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN CARTA / MENÚ -->
+<section class="section-padding" id="carta">
+<div class="container">
+<div class="text-center">
+<div class="section-badge"><i class="fa-solid fa-fire-burner"></i> Nuestra Gastronomía</div>
+<h2 class="section-title">Carta Al Sultán</h2>
+<div class="turkish-divider">
+<span></span>
+<i class="fa-solid fa-star-and-crescent"></i>
+<span class="right"></span>
+</div>
+<p class="section-subtitle">
+            Elaboramos cada plato al momento siguiendo las recetas maestras de Anatolia: panes horneados, carnes sazonadas con especias selectas y salsas caseras.
+          </p>
+<!-- Pestañas de Filtrado -->
+<div class="menu-tabs" role="tablist">
+<button class="tab-btn active" data-category="todos" role="tab">Todos</button>
+<button class="tab-btn" data-category="kebabs" role="tab">Kebabs</button>
+<button class="tab-btn" data-category="platos" role="tab">Platos</button>
+<button class="tab-btn" data-category="entrantes" role="tab">Entrantes</button>
+<button class="tab-btn" data-category="postres" role="tab">Postres y Bebidas</button>
+</div>
+</div>
+<!-- Grid de Platos -->
+<div class="menu-grid" id="menuGrid">
+<!-- 1. Döner Pollo -->
+<article class="menu-card" data-category="kebabs">
+<div class="card-img-wrapper">
+<img alt="Döner Kebab de pollo marinado con verduras frescas y salsa en pan de pita caliente" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal"><i class="fa-solid fa-check"></i> Halal</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Döner Kebab de pollo</h3>
+<span class="card-price">6,50 €</span>
+</div>
+<p class="card-desc">Pollo marinado al estilo otomano, lechuga crujiente, tomate de huerta, cebolla y salsa de yogur casera.</p>
+<div class="card-footer">
+<span>Pan pita artesanal</span>
+<span><i class="fa-regular fa-clock"></i> Clásico</span>
+</div>
+</div>
+</article>
+<!-- 2. Döner Ternera -->
+<article class="menu-card" data-category="kebabs">
+<div class="card-img-wrapper">
+<img alt="Döner Kebab de ternera asada en vertical con ensalada fresca" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal"><i class="fa-solid fa-check"></i> Halal</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Döner Kebab de ternera</h3>
+<span class="card-price">7,50 €</span>
+</div>
+<p class="card-desc">Ternera asada a fuego lento en espetón, ensalada fresca de la huerta y salsa a elegir (yogur, blanca o suave).</p>
+<div class="card-footer">
+<span>100% Ternera selecta</span>
+<span><i class="fa-solid fa-crown"></i> Favorito</span>
+</div>
+</div>
+</article>
+<!-- 3. Durum mixto -->
+<article class="menu-card" data-category="kebabs">
+<div class="card-img-wrapper">
+<img alt="Durum mixto de pollo y ternera enrollado en pan fino y salsa picante" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-spicy">🌶️ Picante</span>
+<span class="badge-tag badge-halal">Halal</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Durum mixto</h3>
+<span class="card-price">8,00 €</span>
+</div>
+<p class="card-desc">Pollo y ternera en pan fino lavash recién tostado, vegetales frescos y nuestra salsa picante Sultán 🌶️.</p>
+<div class="card-footer">
+<span>Pan fino turco</span>
+<span><i class="fa-solid fa-fire"></i> Toque especiado</span>
+</div>
+</div>
+</article>
+<!-- 4. Kebab vegetariano -->
+<article class="menu-card" data-category="kebabs">
+<div class="card-img-wrapper">
+<img alt="Kebab vegetariano con falafel casero, hummus suave y verduras asadas" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-veg">🌱 Vegetariano</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Kebab vegetariano</h3>
+<span class="card-price">6,90 €</span>
+</div>
+<p class="card-desc">Falafel crujiente recién frito, suave hummus casero, verduras asadas y cremosa salsa tahini 🌱.</p>
+<div class="card-footer">
+<span>100% Plant based</span>
+<span><i class="fa-solid fa-seedling"></i> Saludable</span>
+</div>
+</div>
+</article>
+<!-- 5. Plato Iskender -->
+<article class="menu-card" data-category="platos">
+<div class="card-img-wrapper">
+<img alt="Plato tradicional Iskender kebab de ternera con mantequilla y salsa de tomate" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal">Especialidad</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Plato Iskender</h3>
+<span class="card-price">12,50 €</span>
+</div>
+<p class="card-desc">Finas láminas de ternera sobre trozos de pan pita horneado, salsa de tomate caliente, yogur turco y mantequilla fundida aromatizada.</p>
+<div class="card-footer">
+<span>Receta de Bursa</span>
+<span><i class="fa-solid fa-award"></i> Gran sabor</span>
+</div>
+</div>
+</article>
+<!-- 6. Plato Sultán para dos -->
+<article class="menu-card" data-category="platos">
+<div class="card-img-wrapper">
+<img alt="Plato Sultán para compartir con variedad de carnes, arroz basmati, patatas y ensalada" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal">Para 2 personas</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Plato Sultán para dos</h3>
+<span class="card-price">22,00 €</span>
+</div>
+<p class="card-desc">Generosa combinación de carne mixta (pollo y ternera), arroz aromatizado, patatas doradas, ensalada campesina y pan pita recién hecho.</p>
+<div class="card-footer">
+<span>Ideal para compartir</span>
+<span><i class="fa-solid fa-users"></i> Menú completo</span>
+</div>
+</div>
+</article>
+<!-- 7. Lahmacun -->
+<article class="menu-card" data-category="entrantes">
+<div class="card-img-wrapper">
+<img alt="Lahmacun crujiente, pizza turca fina con carne especiada y hierbas" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal">Halal</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Lahmacun</h3>
+<span class="card-price">5,50 €</span>
+</div>
+<p class="card-desc">Fina y crujiente masa artesanal horneada con carne picada especiada, pimiento, tomate, perejil y un toque de limón.</p>
+<div class="card-footer">
+<span>Pizza turca clásica</span>
+<span><i class="fa-solid fa-pizza-slice"></i> Al horno</span>
+</div>
+</div>
+</article>
+<!-- 8. Hummus con pan pita -->
+<article class="menu-card" data-category="entrantes">
+<div class="card-img-wrapper">
+<img alt="Cuenco de hummus cremoso con aceite de oliva virgen extra y pan de pita caliente" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-veg">🌱 Vegetariano</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Hummus con pan pita</h3>
+<span class="card-price">4,50 €</span>
+</div>
+<p class="card-desc">Puré sedoso de garbanzos con tahini, zumo de limón, pimentón dulce y un generoso chorro de aceite de oliva virgen extra 🌱.</p>
+<div class="card-footer">
+<span>Incluye 2 panes pita</span>
+<span><i class="fa-solid fa-leaf"></i> Vegano</span>
+</div>
+</div>
+</article>
+<!-- 9. Falafel (6 uds.) -->
+<article class="menu-card" data-category="entrantes">
+<div class="card-img-wrapper">
+<img alt="Ración de 6 piezas de falafel dorado con semillas de sésamo y hierbas aromáticas" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-veg">🌱 Vegetariano</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Falafel (6 uds.)</h3>
+<span class="card-price">5,00 €</span>
+</div>
+<p class="card-desc">Croquetas tradicionales de garbanzos molidos con cilantro, comino y ajo, servidas con salsa de yogur y menta 🌱.</p>
+<div class="card-footer">
+<span>Crujientes por fuera</span>
+<span><i class="fa-solid fa-check"></i> 6 unidades</span>
+</div>
+</div>
+</article>
+<!-- 10. Ensalada pastora -->
+<article class="menu-card" data-category="entrantes">
+<div class="card-img-wrapper">
+<img alt="Ensalada pastora Çoban Salatasi con tomate, pepino, queso feta y vinagreta" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-veg">🌱 Vegetariano</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Ensalada pastora</h3>
+<span class="card-price">4,80 €</span>
+</div>
+<p class="card-desc">Çoban Salatası tradicional con dados de tomate jugoso, pepino, pimiento verde, cebolla morada, queso y aliño de zumaque 🌱.</p>
+<div class="card-footer">
+<span>Muy refrescante</span>
+<span><i class="fa-solid fa-carrot"></i> Ligero</span>
+</div>
+</div>
+</article>
+<!-- 11. Baklava -->
+<article class="menu-card" data-category="postres">
+<div class="card-img-wrapper">
+<img alt="Porciones de dulce baklava de hojaldre crujiente, pistachos picados y almíbar" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-veg">🌱 Dulce</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Baklava (3 uds.)</h3>
+<span class="card-price">4,00 €</span>
+</div>
+<p class="card-desc">Capas crujientes de finísimo hojaldre filo rellenas de pistachos seleccionados de Gaziantep y bañadas en almíbar de miel.</p>
+<div class="card-footer">
+<span>El postre rey turco</span>
+<span><i class="fa-solid fa-cake-candles"></i> 3 unidades</span>
+</div>
+</div>
+</article>
+<!-- 12. Künefe -->
+<article class="menu-card" data-category="postres">
+<div class="card-img-wrapper">
+<img alt="Künefe caliente servido al instante con queso fundido y pistacho triturado" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-spicy" style="background:#FFF3E0; color:#E8832A; border-color:#E8832A;">Recién hecho</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Künefe</h3>
+<span class="card-price">5,50 €</span>
+</div>
+<p class="card-desc">Delicioso postre horneado al momento con fideos kadayıf crujientes, corazón de queso fundido elástico y pistacho molido.</p>
+<div class="card-footer">
+<span>Se sirve muy caliente</span>
+<span><i class="fa-solid fa-fire"></i> Exclusivo</span>
+</div>
+</div>
+</article>
+<!-- 13. Bebidas y Té -->
+<article class="menu-card" data-category="postres">
+<div class="card-img-wrapper">
+<img alt="Vasos tradicionales de té turco caliente aromático y bebidas refrescantes" class="card-img" loading="lazy" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="card-badges">
+<span class="badge-tag badge-halal">Bebidas</span>
+</div>
+</div>
+<div class="card-body">
+<div class="card-header">
+<h3 class="card-title">Ayran, refrescos y té</h3>
+<span class="card-price">desde 1,80 €</span>
+</div>
+<p class="card-desc">Refrescante Ayran tradicional (yogur batido salado), auténtico té turco Çay servido en vaso estilizado y variedad de refrescos fríos.</p>
+<div class="card-footer">
+<span>Té tradicional turco</span>
+<span><i class="fa-solid fa-mug-hot"></i> Variedad</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SECCIÓN RESERVAS -->
+<section class="section-padding reservas-section" id="reservas">
+<div class="container">
+<div class="text-center">
+<div class="section-badge"><i class="fa-regular fa-calendar-check"></i> Mesa Garantizada</div>
+<h2 class="section-title">Reserva tu Experiencia</h2>
+<div class="turkish-divider">
+<span></span>
+<i class="fa-solid fa-utensils"></i>
+<span class="right"></span>
+</div>
+<p class="section-subtitle">
+            Asegura tu mesa en nuestro acogedor comedor interior o en nuestra agradable terraza cerca de la Puerta del Sol.
+          </p>
+</div>
+<div class="reservas-wrapper">
+<div class="reserva-alert">
+<i class="fa-solid fa-circle-info" style="color: var(--color-naranja); font-size: 1.3rem;"></i>
+<div>
+<strong>Aviso para grupos:</strong> Para reservas de más de 8 personas, por favor llámanos directamente al 
+              <a href="tel:+34910123456" style="color: var(--color-granate); font-weight:700; text-decoration:underline;">+34 910 123 456</a> para garantizar una atención personalizada.
+            </div>
+</div>
+<form id="reservaForm" novalidate="">
+<div class="form-grid">
+<!-- Nombre -->
+<div class="form-group">
+<label class="form-label" for="nombre">Nombre y apellidos <span class="required">*</span></label>
+<input class="form-control" id="nombre" name="nombre" placeholder="Ej. Carlos Mendoza" required="" type="text"/>
+<span class="error-msg">Por favor, introduce tu nombre completo.</span>
+</div>
+<!-- Teléfono -->
+<div class="form-group">
+<label class="form-label" for="telefono">Teléfono de contacto <span class="required">*</span></label>
+<input class="form-control" id="telefono" name="telefono" pattern="^[+0-9\s]{9,15}$" placeholder="Ej. +34 612 345 678" required="" type="tel"/>
+<span class="error-msg">Introduce un número de teléfono válido.</span>
+</div>
+<!-- Email -->
+<div class="form-group">
+<label class="form-label" for="email">Correo electrónico <span class="required">*</span></label>
+<input class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="" type="email"/>
+<span class="error-msg">Introduce un correo electrónico válido.</span>
+</div>
+<!-- Fecha -->
+<div class="form-group">
+<label class="form-label" for="fecha">Fecha de reserva <span class="required">*</span></label>
+<input class="form-control" id="fecha" name="fecha" required="" type="date"/>
+<span class="error-msg">Selecciona una fecha válida (a partir de hoy).</span>
+</div>
+<!-- Hora -->
+<div class="form-group">
+<label class="form-label" for="hora">Hora <span class="required">*</span></label>
+<select class="form-control" id="hora" name="hora" required="">
+<option disabled="" selected="" value="">Selecciona un turno</option>
+<!-- Franjas horarias generadas dinámicamente o predefinidas -->
+<optgroup label="Almuerzo">
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+</optgroup>
+<optgroup label="Cena">
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
+</optgroup>
+</select>
+<span class="error-msg">Selecciona la hora de tu visita.</span>
+</div>
+<!-- Comensales -->
+<div class="form-group">
+<label class="form-label" for="comensales">Número de personas <span class="required">*</span></label>
+<select class="form-control" id="comensales" name="comensales" required="">
+<option disabled="" selected="" value="">¿Cuántos seréis?</option>
+<option value="1">1 persona</option>
+<option value="2">2 personas</option>
+<option value="3">3 personas</option>
+<option value="4">4 personas</option>
+<option value="5">5 personas</option>
+<option value="6">6 personas</option>
+<option value="7">7 personas</option>
+<option value="8">8 personas</option>
+<option value="mas8">Más de 8 personas (requiere llamada)</option>
+</select>
+<span class="error-msg">Indica el número de comensales.</span>
+</div>
+<!-- Zona -->
+<div class="form-group">
+<label class="form-label" for="zona">Preferencia de zona <span class="required">*</span></label>
+<select class="form-control" id="zona" name="zona" required="">
+<option selected="" value="interior">Salón interior (Climatizado)</option>
+<option value="terraza">Terraza exterior (Admite mascotas)</option>
+</select>
+</div>
+<!-- Comentarios -->
+<div class="form-group form-group-full">
+<label class="form-label" for="comentarios">Comentarios o peticiones especiales</label>
+<textarea class="form-control" id="comentarios" name="comentarios" placeholder="Alergias, intolerancias alimentarias, celebración de cumpleaños, trona para bebé..." rows="3"></textarea>
+</div>
+</div>
+<div style="margin-top: 28px; text-align: center;">
+<button class="btn btn-primary" style="width: 100%; max-width: 380px; padding: 16px;" type="submit">
+<i class="fa-solid fa-check"></i> Confirmar reserva online
+              </button>
+<p style="font-size: 0.82rem; color: var(--color-marron-light); margin-top: 10px;">
+<i class="fa-regular fa-clock"></i> Mantenemos tu mesa 15 minutos de cortesía tras la hora seleccionada.
+              </p>
+</div>
+</form>
+<!-- Banner de éxito tras envío -->
+<div class="confirmation-banner" id="reservaConfirmacion" role="alert">
+<i class="fa-solid fa-circle-check"></i>
+<h4>¡Reserva solicitada con éxito!</h4>
+<p id="reservaResumen" style="font-size: 1.05rem; margin-bottom: 12px;"></p>
+<p style="font-size: 0.9rem; opacity: 0.9;">Hemos enviado los detalles a tu email y teléfono móvil. ¡Te esperamos en Kebab Al Sultán para una velada inolvidable!</p>
+<button class="btn btn-outline" id="btnNuevaReserva" style="margin-top: 18px; padding: 8px 20px; font-size: 0.88rem;" type="button">Hacer otra reserva</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN UBICACIÓN Y CONTACTO -->
+<section class="section-padding" id="ubicacion">
+<div class="container">
+<div class="text-center">
+<div class="section-badge"><i class="fa-solid fa-map-location-dot"></i> Encuéntranos</div>
+<h2 class="section-title">Ubicación y Contacto</h2>
+<div class="turkish-divider">
+<span></span>
+<i class="fa-solid fa-compass"></i>
+<span class="right"></span>
+</div>
+<p class="section-subtitle">
+            Situados a escasos pasos de la emblemática Puerta del Sol, en una calle céntrica y tranquila con fácil acceso en transporte público.
+          </p>
+</div>
+<div class="ubicacion-grid">
+<!-- Mapa interactivo de Google Maps -->
+<div class="map-container">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6083310061595!2d-3.703704223425573!3d40.41827675560662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880c2f7b889%3A0x633bc839d375bbce!2sC.%20de%20la%20Aduana%2C%2014%2C%20Centro%2C%2028013%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" title="Ubicación de Kebab Al Sultán en Calle de la Aduana 14, Madrid">
+</iframe>
+</div>
+<!-- Información de Contacto y Cómo Llegar -->
+<div class="info-card">
+<div>
+<!-- Dirección -->
+<div class="info-item">
+<div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+<div class="info-content">
+<h4>Dirección</h4>
+<p>Calle de la Aduana, 14, 28013 Madrid<br/>(A 2 minutos a pie de Puerta del Sol)</p>
+</div>
+</div>
+<!-- Cómo llegar -->
+<div class="info-item">
+<div class="info-icon"><i class="fa-solid fa-train-subway"></i></div>
+<div class="info-content">
+<h4>Cómo llegar</h4>
+<p><strong>Metro:</strong> Sol (Líneas 1, 2 y 3) y Sevilla (Línea 2)<br/>
+<strong>Autobuses EMT:</strong> Líneas 3 y 150</p>
+</div>
+</div>
+<!-- Teléfono & Email -->
+<div class="info-item">
+<div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+<div class="info-content">
+<h4>Teléfono y Reservas</h4>
+<p><a href="tel:+34910123456">+34 910 123 456</a><br/>
+<a href="mailto:reservas@kebabalsultan.es">reservas@kebabalsultan.es</a></p>
+</div>
+</div>
+<!-- Horarios -->
+<div class="info-item">
+<div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+<div class="info-content" style="width: 100%;">
+<h4>Horario de Apertura</h4>
+<ul class="horarios-list">
+<li><span class="day">Lunes a Jueves:</span> <span>12:00 – 00:00</span></li>
+<li><span class="day">Viernes y Sábado:</span> <span>12:00 – 02:00</span></li>
+<li><span class="day">Domingo:</span> <span>13:00 – 23:30</span></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Botón Cómo llegar externo -->
+<div style="margin-top: 15px;">
+<a class="btn btn-primary" href="https://maps.google.com/?q=Calle+de+la+Aduana+14+Madrid" rel="noopener noreferrer" style="width: 100%;" target="_blank">
+<i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar en Google Maps
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN PREGUNTAS FRECUENTES (FAQ) -->
+<section class="section-padding" id="faq" style="background-color: #FAF2E6;">
+<div class="container">
+<div class="text-center">
+<div class="section-badge"><i class="fa-regular fa-circle-question"></i> Resolvemos tus Dudas</div>
+<h2 class="section-title">Preguntas Frecuentes</h2>
+<div class="turkish-divider">
+<span></span>
+<i class="fa-solid fa-feather"></i>
+<span class="right"></span>
+</div>
+<p class="section-subtitle">
+            Todo lo que necesitas saber antes de visitarnos o pedir a domicilio desde Kebab Al Sultán.
+          </p>
+</div>
+<div class="faq-container" id="faqAccordion">
+<!-- FAQ 1 -->
+<div class="faq-item active">
+<button aria-expanded="true" class="faq-question">
+<span>¿Es carne halal?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Sí, absolutamente. Toda nuestra carne de pollo y ternera es 100% halal y procede de proveedores homologados con certificado oficial de garantía y trazabilidad.</p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Tenéis opciones vegetarianas o veganas?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>¡Por supuesto! Contamos con platos caseros elaborados a base de plantas como nuestro falafel tradicional, hummus suave con tahini, ensalada pastora y verduras asadas. Varias de estas opciones son totalmente veganas.</p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Se puede reservar para grupos grandes?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Sí. Para grupos de más de 8 personas te rogamos contactarnos por teléfono al <a href="tel:+34910123456" style="color:var(--color-granate); font-weight:600;">+34 910 123 456</a> para preparar los menús y la disposición de mesas ideal.</p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Hacéis reparto a domicilio?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Sí, realizamos entregas a domicilio en un radio de 3 km alrededor de nuestro local en Sol, con un pedido mínimo de 12 €. Tus platos llegarán calientes y perfectamente empaquetados.</p>
+</div>
+</div>
+<!-- FAQ 5 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Tenéis opciones sin gluten?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Disponemos de platos con ingredientes sin gluten previa notificación a nuestro personal de sala (como carnes al plato y ensaladas). Ten en cuenta que nuestros panes contienen gluten y compartimos cocina con harinas.</p>
+</div>
+</div>
+<!-- FAQ 6 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Aceptáis tarjeta?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Sí, aceptamos tarjetas de crédito y débito (Visa, Mastercard, contactless, Apple Pay, Google Pay), Bizum y pago en efectivo.</p>
+</div>
+</div>
+<!-- FAQ 7 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Admitís mascotas?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Las mascotas son bienvenidas exclusivamente en nuestra zona de terraza al aire libre. En el salón interior no está permitido el acceso por normativa higiénica de restauración.</p>
+</div>
+</div>
+<!-- FAQ 8 -->
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
+<span>¿Cuánto tiempo se mantiene la reserva?</span>
+<i class="fa-solid fa-chevron-down faq-icon"></i>
+</button>
+<div class="faq-answer">
+<p>Ofrecemos 15 minutos de cortesía a partir de la hora fijada en la reserva. Si prevés cualquier retraso imprevisto, avísanos con una rápida llamada telefónica.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- PIE DE PÁGINA -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<!-- Columna Marca -->
+<div class="footer-col">
+<div class="logo" style="margin-bottom: 16px;">
+<div class="logo-symbol" style="background: var(--color-naranja);">
+<i class="fa-solid fa-moon"></i>
+</div>
+<div class="logo-text-group">
+<span class="logo-title" style="color: var(--color-crema);">Al Sultán</span>
+<span class="logo-subtitle">Sabor de Estambul</span>
+</div>
+</div>
+<p class="footer-desc">
+            Auténtica gastronomía turca elaborada con esmero y carne halal certificada en el centro de Madrid. Disfruta en nuestro salón, terraza o en tu casa.
+          </p>
+<div class="social-links">
+<a aria-label="Instagram de Kebab Al Sultán" class="social-btn" href="https://instagram.com/kebabalsultan_madrid" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="Llamar al restaurante" class="social-btn" href="tel:+34910123456">
+<i class="fa-solid fa-phone"></i>
+</a>
+<a aria-label="Enviar correo electrónico" class="social-btn" href="mailto:reservas@kebabalsultan.es">
+<i class="fa-regular fa-envelope"></i>
+</a>
+</div>
+</div>
+<!-- Columna Enlaces -->
+<div class="footer-col">
+<h4>Navegación</h4>
+<ul class="footer-links-list">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#carta">Nuestra Carta</a></li>
+<li><a href="#reservas">Reservar Mesa</a></li>
+<li><a href="#ubicacion">Ubicación y Mapa</a></li>
+<li><a href="#faq">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<!-- Columna Horarios -->
+<div class="footer-col">
+<h4>Horarios</h4>
+<ul class="footer-links-list" style="font-size: 0.9rem; color: #D3C4B8;">
+<li style="margin-bottom: 8px;"><strong>Lunes a Jueves:</strong><br/>12:00 a 00:00</li>
+<li style="margin-bottom: 8px;"><strong>Viernes y Sábado:</strong><br/>12:00 a 02:00</li>
+<li><strong>Domingo:</strong><br/>13:00 a 23:30</li>
+</ul>
+</div>
+<!-- Columna Contacto -->
+<div class="footer-col">
+<h4>Contacto</h4>
+<p class="footer-desc" style="margin-bottom: 8px;">
+<i class="fa-solid fa-location-dot" style="color:var(--color-naranja); margin-right:8px;"></i> C/ de la Aduana, 14, 28013 Madrid
+          </p>
+<p class="footer-desc" style="margin-bottom: 8px;">
+<i class="fa-solid fa-phone" style="color:var(--color-naranja); margin-right:8px;"></i> +34 910 123 456
+          </p>
+<p class="footer-desc" style="margin-bottom: 8px;">
+<i class="fa-solid fa-envelope" style="color:var(--color-naranja); margin-right:8px;"></i> reservas@kebabalsultan.es
+          </p>
+<p class="footer-desc">
+<i class="fa-brands fa-instagram" style="color:var(--color-naranja); margin-right:8px;"></i> @kebabalsultan_madrid
+          </p>
+</div>
+</div>
+<!-- Barra inferior Legal -->
+<div class="footer-bottom">
+<div>
+          © <span id="currentYear"></span> Kebab Al Sultán. Todos los derechos reservados. Carne 100% Halal Certificada.
+        </div>
+<div style="display: flex; gap: 18px;">
+<a href="#" style="color: inherit;">Aviso Legal</a>
+<a href="#" style="color: inherit;">Política de Privacidad</a>
+<a href="#" style="color: inherit;">Política de Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- JAVASCRIPT SIN DEPENDENCIAS EXTERNAS -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // 1. Año dinámico en el footer
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // 2. Control de cabecera con scroll
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // 3. Menú móvil hamburguesa
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+          menuToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        // Cerrar menú al pulsar un enlace
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          });
+        });
+      }
+
+      // 4. Filtrado interactivo de la carta
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const category = btn.getAttribute('data-category');
+
+          menuCards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (category === 'todos' || cardCat === category) {
+              card.style.display = 'flex';
+              card.style.animation = 'fadeIn 0.35s ease';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 5. Acordeón interactivo de Preguntas Frecuentes (FAQ)
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
+        questionBtn.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          
+          // Cerrar los demás acordeones para mantener orden visual
+          faqItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+            questionBtn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // 6. Validación y Envío del Formulario de Reservas
+      const reservaForm = document.getElementById('reservaForm');
+      const confirmacionBanner = document.getElementById('reservaConfirmacion');
+      const resumenText = document.getElementById('reservaResumen');
+      const fechaInput = document.getElementById('fecha');
+      const comensalesSelect = document.getElementById('comensales');
+      const btnNuevaReserva = document.getElementById('btnNuevaReserva');
+
+      // Fecha mínima: hoy
+      if (fechaInput) {
+        const today = new Date().toISOString().split('T')[0];
+        fechaInput.min = today;
+        fechaInput.value = today;
+      }
+
+      // Alerta si seleccionan más de 8 personas
+      if (comensalesSelect) {
+        comensalesSelect.addEventListener('change', (e) => {
+          if (e.target.value === 'mas8') {
+            alert('Para reservas de más de 8 personas, por favor llámanos directamente al +34 910 123 456 para atenderos de forma personalizada.');
+          }
+        });
+      }
+
+      if (reservaForm) {
+        reservaForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          let isValid = true;
+          const fieldsToValidate = ['nombre', 'telefono', 'email', 'fecha', 'hora', 'comensales'];
+
+          fieldsToValidate.forEach(fieldId => {
+            const input = document.getElementById(fieldId);
+            if (!input) return;
+
+            let fieldValid = true;
+
+            if (input.tagName === 'SELECT') {
+              if (!input.value) fieldValid = false;
+            } else if (input.type === 'email') {
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              fieldValid = emailRegex.test(input.value.trim());
+            } else if (input.type === 'tel') {
+              fieldValid = input.value.trim().length >= 9;
+            } else {
+              fieldValid = input.value.trim().length > 0;
+            }
+
+            if (!fieldValid) {
+              input.classList.add('error');
+              isValid = false;
+            } else {
+              input.classList.remove('error');
+            }
+          });
+
+          if (isValid) {
+            const nombre = document.getElementById('nombre').value;
+            const comensales = document.getElementById('comensales').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            const zona = document.getElementById('zona').value === 'terraza' ? 'Terraza' : 'Salón interior';
+
+            // Formatear fecha a legible
+            const [y, m, d] = fecha.split('-');
+            const fechaFormateada = `${d}/${m}/${y}`;
+
+            resumenText.innerHTML = `<strong>${nombre}</strong>, tu mesa para <strong>${comensales} personas</strong> está reservada para el <strong>${fechaFormateada}</strong> a las <strong>${hora}h</strong> en <strong>${zona}</strong>.`;
+
+            reservaForm.style.display = 'none';
+            confirmacionBanner.style.display = 'block';
+            confirmacionBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+
+        // Limpiar errores on input
+        reservaForm.querySelectorAll('.form-control').forEach(input => {
+          input.addEventListener('input', () => {
+            input.classList.remove('error');
+          });
+          input.addEventListener('change', () => {
+            input.classList.remove('error');
+          });
+        });
+      }
+
+      if (btnNuevaReserva) {
+        btnNuevaReserva.addEventListener('click', () => {
+          reservaForm.reset();
+          reservaForm.style.display = 'block';
+          confirmacionBanner.style.display = 'none';
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
